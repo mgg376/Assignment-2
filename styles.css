@@ -1,0 +1,82 @@
+body {
+  font-family: comic sans ms; 
+  padding: 20px;
+  }
+  
+  #title {
+    font-family: comic sans ms;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-left: 100px
+  }
+  
+  #face {
+    font-family: comic sans ms;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-right: 200px
+  }
+  
+  
+  #content-area {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  #left-panel {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #right-panel {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  button {
+    margin-bottom: 10px;
+  }
+  
+  /* CSS for this fancy button I got from getcssscan.com */
+  
+  /* CSS */
+  .button-71 {
+    background-color: #442980;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    outline: 0;
+    padding: 10px 2px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  
+  .button-71:hover {
+    box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+    transform: scale(1.05);
+  }
+  
+  @media (min-width: 768px) {
+    .button-71 {
+      padding: 16px 48px;
+    }
+  }
