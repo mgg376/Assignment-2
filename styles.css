@@ -3,23 +3,25 @@ body {
   padding: 20px;
   }
   
-  #title {
+  .header {
+    display: flex;
+    justify-content: space-between; /* Spaces out items */
+    align-items: center; /* Vertically centers items */
+  }
+  
+  #name {
     font-family: comic sans ms;
-    text-align: left;
     font-weight: bold;
     font-size: 30px;
-    margin-bottom: 0px;
-    margin-left: 100px
+    margin-left: 200px
   }
   
   #face {
     font-family: comic sans ms;
-    text-align: left;
     font-weight: bold;
     font-size: 30px;
-    margin-bottom: 0px;
     margin-right: 200px
-  }
+  }  
   
   
   #content-area {
@@ -45,7 +47,6 @@ body {
     margin-bottom: 10px;
   }
   
-  /* CSS for this fancy button I got from getcssscan.com */
   
   /* CSS */
   .button-71 {

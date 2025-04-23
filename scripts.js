@@ -1,65 +1,35 @@
 function injectImage() {
-  // Create an image element
-  const img = document.createElement("img")
-
-  // Set the image source and alt text
-  img.src =
-    "https://i.imgur.com/aDNO7UG.jpeg"
-  img.alt = "sample image"
-
-  // Find the target div and add the image to it
-  const container = document.getElementById("right-panel")
-  
-  container.innerHTML = '';
-  container.appendChild(img)
+  const img = document.createElement("img");
+  img.src = "https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?cs=srgb&dl=pexels-pixabay-57416.jpg&fm=jpg";
+  img.alt = "freddy";
+  appendImage(img);
 }
 
 function injectImage2() {
-  // Create an image element
-  const img = document.createElement("img")
-
-  // Set the image source and alt text
-  img.src =
-    "https://i.imgur.com/ect5aVG.jpeg"
-  img.alt = "Sample Image"
-
-  // Find the target div and add the image to it
-  const container = document.getElementById("right-panel")
-  
-  container.innerHTML = '';
-  container.appendChild(img)
+  const img = document.createElement("img");
+  img.src = "https://t3.ftcdn.net/jpg/02/36/99/22/360_F_236992283_sNOxCVQeFLd5pdqaKGh8DRGMZy7P4XKm.jpg";
+  img.alt = "fay";
+  appendImage(img);
 }
 
 function injectImage3() {
-console.log('2')
-  // Create an image element
-  const img3 = document.createElement("img")
-
-  // Set the image source and alt text
-  img3.src =
-    "https://i.imgur.com/BMJb7AW.jpeg"
-  img3.alt = "Sample Image"
-
-  // Find the target div and add the image to it
-  const container = document.getElementById("right-panel")
-  
-  container.innerHTML = '';
-  container.appendChild(img3)
+  const img = document.createElement("img");
+  img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/1200px-Cat_November_2010-1a.jpg";
+  img.alt = "lola";
+  appendImage(img);
 }
 
 function injectImage4() {
-console.log('2')
-  // Create an image element
-  const img4 = document.createElement("img")
+  const img = document.createElement("img");
+  img.src = "https://plus.unsplash.com/premium_photo-1673967831980-1d377baaded2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D";
+  img.alt = "rd";
+  appendImage(img);
+}
 
-  // Set the image source and alt text
-  img4.src =
-    "https://i.imgur.com/UXBls0b.jpeg"
-  img4.alt = "Sample Image"
-
-  // Find the target div and add the image to it
-  const container = document.getElementById("right-panel")
-  
-  container.innerHTML = '';
-  container.appendChild(img4)
+function appendImage(img) {
+  img.style.width = "100%";
+  img.style.maxWidth = "600px";
+  const container = document.getElementById("right-panel");
+  container.innerHTML = "";
+  container.appendChild(img);
 }

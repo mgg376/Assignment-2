@@ -1,64 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title Example</title>
-    <style>
-        .header {
-            display: flex;
-            justify-content: space-between; /* Distributes the items with space in between */
-            align-items: center;
-            padding: 10px 20px;
-            font-family: Calibri, sans-serif;
-            background-color: white;
-            width: 100%;
-        }
-        #title, #face {
-            font-size: 24px;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title Example</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="header">
-        <div id="title">Name</div>
-        <div id="face">Face</div>
+  <div class="header">
+    <div id="name">Name</div>
+    <div id="face">Face</div>
+  </div>
+
+  <div id="content-area">
+    <div id="left-panel">
+      <button class="button-71" onclick="injectImage()">Freddy</button>
+      <button class="button-71" onclick="injectImage2()">Fay</button>
+      <button class="button-71" onclick="injectImage3()">Lola</button>
+      <button class="button-71" onclick="injectImage4()">Rocket Dog</button>
     </div>
 
+    <div id="right-panel">
+      Click to see cats
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
-
-
-<div id="content-area">
-
-  <div id="left-panel">
-    <!-- HTML !-->
-<button class="button-71" role="button" onclick=injectImage()>Freddy </button>
-<button class="button-71" role="button" onclick=injectImage2()>Fay</button>
-<button class="button-71" role="button" onclick=injectImage3()>Lola</button>
-<button class="button-71" role="button" onclick=injectImage4()>Rocket Dog</button>
-
-  </div>
-  <div id="right-panel">
-    Click to see cats
-  </div>
-</div>
-
-
-<img src="your-image.jpg" alt="sample image" style="width: 100%; max-width: 600px;">
-
-<button onclick="resizeImage()">Shrink</button>
-
-<script>
-function resizeImage() {
-    let images = document.querySelectorAll("img");
-    images.forEach(img => {
-        if (img.alt === "sample image") {
-            img.style.width = "200px";  // Set new width
-            img.style.height = "auto";  // Maintain aspect ratio
-        }
-    });
-}
-</script>
